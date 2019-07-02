@@ -1,0 +1,406 @@
+{
+	"info": {
+		"_postman_id": "ae875458-65bb-4c5f-be04-783b6b6c642c",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "getCustomerInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/customers?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"customers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCustomer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/customers?id=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"customers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCustomer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/customers/update?cadr=Im Rauental 48&cn=Volkan C&em=vvv@de.de&p=77777&id=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"customers",
+								"update"
+							],
+							"query": [
+								{
+									"key": "cadr",
+									"value": "Im Rauental 48"
+								},
+								{
+									"key": "cn",
+									"value": "Volkan C"
+								},
+								{
+									"key": "em",
+									"value": "vvv@de.de"
+								},
+								{
+									"key": "p",
+									"value": "77777"
+								},
+								{
+									"key": "curr",
+									"value": "USD",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allCustomersByItem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/customers/byItem?i=Macbook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"customers",
+								"byItem"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "Macbook"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customerOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/customers/orders?cn=John Smith",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"customers",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "cn",
+									"value": "John Smith"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customerPaid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/customers/paid?cn=John Smith",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"customers",
+								"paid"
+							],
+							"query": [
+								{
+									"key": "cn",
+									"value": "John Smith"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "updateOrder",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/orders/update?cadr=Im Rauental 48&cn=Herr Cicek&in=Kindle 2&p=150&curr=USD&id=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"orders",
+								"update"
+							],
+							"query": [
+								{
+									"key": "cadr",
+									"value": "Im Rauental 48"
+								},
+								{
+									"key": "cn",
+									"value": "Herr Cicek"
+								},
+								{
+									"key": "in",
+									"value": "Kindle 2"
+								},
+								{
+									"key": "p",
+									"value": "150"
+								},
+								{
+									"key": "curr",
+									"value": "USD"
+								},
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/orders/create?cadr=Im Rauental 48&cn=Volkan Cicek&in=Kindle&p=120&curr=EURO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"orders",
+								"create"
+							],
+							"query": [
+								{
+									"key": "cadr",
+									"value": "Im Rauental 48"
+								},
+								{
+									"key": "cn",
+									"value": "Volkan Cicek"
+								},
+								{
+									"key": "in",
+									"value": "Kindle"
+								},
+								{
+									"key": "p",
+									"value": "120"
+								},
+								{
+									"key": "curr",
+									"value": "EURO"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOrder",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/orders?id=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"orders"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OrdersbyAddress",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/orders/byAddress?cadr=Reeperbahn 153",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"orders",
+								"byAddress"
+							],
+							"query": [
+								{
+									"key": "cadr",
+									"value": "Reeperbahn 153"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OrdersbyCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/orders/byCustomer?cn=John Smith",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"orders",
+								"byCustomer"
+							],
+							"query": [
+								{
+									"key": "cn",
+									"value": "John Smith"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8888/orders/items?",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"orders",
+								"items"
+							],
+							"query": [
+								{
+									"key": "i",
+									"value": "Macbook",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "about",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/about",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"about"
+					]
+				},
+				"description": "about"
+			},
+			"response": []
+		}
+	]
+}

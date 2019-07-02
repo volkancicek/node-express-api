@@ -1,0 +1,9 @@
+{
+  "Application":{
+    "Name": "node_api",
+    "Version": "1.0.0"
+  },
+  "Server":{
+    "Port": 8888
+  }
+}

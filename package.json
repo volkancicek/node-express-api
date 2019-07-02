@@ -1,0 +1,20 @@
+{
+  "name": "BorderGuru",
+  "version": "1.0.0",
+  "description": "BorderGuru Case Study",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha tests/*.test.js"
+  },
+  "author": "volkan cicek",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "config": "^3.1.0",
+    "express": "^4.17.1",
+    "jsonpath": "^1.0.2",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "request": "^2.88.0"
+  }
+}
