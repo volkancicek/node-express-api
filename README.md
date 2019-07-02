@@ -1,6 +1,3 @@
-# Creator
-Volkan Cicek
-
 
 ## Build & Run
 
